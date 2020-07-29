@@ -1,28 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Hello!</title>
-    
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>  
+    <title>Internships and Jobs Galore!</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="script.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--var name = false/true if clicked boolean false-->
+  </head>
   <body>
-    <h1>Hi there!</h1>
-    
-    <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
-    </p>
+    <div class="header">
+      <h1 class="head">Job listings, volunteering and summer internships for teens</h1>
+    </div>
+    <h1>Looking for a <strong>job</strong> this spring? Nothing to do over the <strong>summer</strong>? Want to make an <strong>impact</strong> on your community? Check out these jobs, internships and volunteering opportunites below!</h1>
+  <nav class="help">
+    <div class="categories">
+      <h2><a href="#first_internships">Internships</a></h2>
+    </div>
+    <div class="categories">
+      <h2><a href="#first_jobs">Jobs</a></h2>
+    </div>
+    <div class="categories">
+      <h2><a href="#first_volunteering">Volunteering</a></h2>
+    </div>
+    <div class="categories">
+      <h2><a href="#first_tips">Tips</a></h2>
+    </div>
+  </nav>
+    <br>
+<!--    <video id="teen_working" src="cbhs.jobs.mp4" controls>
+      Video not supported.
+    </video>
+    <video id="teen_internship" src="cbhs.internship.mp4" controls>
+        Video not supported.
+    </video>
+-->
+      <img id="teen_working" src="https://si.wsj.net/public/resources/images/BN-TU806_teenwo_P_20170609163248.jpg" alt="Teen working">
+      <img id="teen_internship" src="https://www.chesterbrookwoodsneighborhood.com/users/LizzieConroy2287/Man-and-woman-with-documents-in-an-office,-smiling,-close-up-694389880_2124x1416.jpeg" alt="Teen at an internship">
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+<!-- Internships section -->
+    <div id="internships">
+      <h1 id="first_internships">Internships:</h1>
+      <p class="paragraph">Down below is a list of summer internships that will immerse you in subjects ranging from Bio-Medical Research to Computer Science. </p>
+    </div>
+    <div class="descriptions hover">
+      <h3 class="names expand"  onclick="dropDown()">Jackson Lab Summer Program</h3>
+      <details class="dropdown">
+        <summary>The Jackson Lab Summer Student Program is designed for students who want to immerse themselves in genetics and genomics research. It emphasizes laboratory discovery, communication of knowledge, and professional growth. <span class="expand" onclick="dropDown()"></span></summary>
+          <ul id="jackson">
+            <li> Students participate in an ongoing research program with the support of an experienced scientific mentor. They develop an independent project, implement their plan, analyze the data, and report the results. At the end of the summer, they present their findings to researchers, other students, and parents.</li>
+            <br>
+            <li>Admission is competitive, and students of all backgrounds are selected. All students receive a stipend of $6,000 for the 10-week program, including room and board at Highseas (Maine program) or at the University of St. Joseph (Connecticut program).  The cost of round-trip travel between the student's home and the Laboratory is also provided.</li>
+            <br>
+            <li>The Jackson Lab Summer Student Program seeks to admit students from a wide range of backgrounds and experiences. These efforts enhance the impact of the SSP experience for all participants and support national efforts to expand the biomedical research workforce to individuals from groups underrepresented and underserved in biomedicine. The SSP will include a diverse community of learners. Students from groups underrepresented in the sciences are strongly encouraged to apply.</li>
+            <br>
+            <li><a target="_blank" href="https://www.jax.org/education-and-learning/high-school-students-and-undergraduates/learn-earn-and-explore/admission#"><strong>Here</strong></a> is the application for the Jackson Lab's paid summer science program. Note that only US Citizens and Permanent Residents can go. The deadline is Feb 2.</li>
+          </ul>
+      </details>
+    </div>
+    <br>
+    <div class="descriptions hover">
+      <h3 class="names"> Student Leaders Program</h3>
+      <details class="dropdown">
+        <summary>Through Student Leaders, Bank of America recognizes high school students who lead and serve in their own communities and beyond. We connect Student Leaders to tools and resources to help make communities better. <span class="expand" onclick="dropDown()"></span></summary>
+        <ul>
+          <li>Since 2004, Student Leaders has been part of our ongoing commitment to youth employment and economic mobility. Preparing a diverse pipeline of community-minded young students with the leadership training they need to be successful in the workforce is vital to our approach to responsible growth and helps to build thriving communities. Through our Student Leaders program we connect more than 300 community-minded high school juniors and seniors from nearly 100 communities to employment, skills development and service.</li>
+          <br>
+          <li>They're awarded paid summer internships with local nonprofits such as Boys and Girls Clubs of America and Habitat for Humanity and participate in a national leadership summit in Washington, D.C. The Student Leaders Summit focuses on skill building and creating a more civically engaged society.</li>
+          <br>
+          <li><a target="_blank" href="https://about.bankofamerica.com/en-us/what-guides-us/student-leaders.html#fbid=kLN1XnEn1Tx"><strong>Here</strong></a> is the application for the Student Leaders Program. The 2020 Student Leaders application will be open from November 4, 2019 – January 31, 2020</li>
+        </ul>
+      </details>
+    </div>
+    <br>
+    <div class="descriptions hover">
+      <h3 class="names">The MERITS Program</h3>
+      <details class="dropdown">
+        <summary>The MERITS (Maine Research Internships for Teachers and Students) Program provides summer research opportunities (6 weeks) for highly motivated high school students who are interested in science, technology, engineering and mathematics (STEM) careers to experience “real-time” applications of STEM in a research-focused work world at host institutions conducting research and technology development.</summary>
+          <ul>
+            <li>The Maine Space Grant Consortium (MSGC) is pleased to announce the availability of funds to support a limited number of summer research internships for highly motivated Maine high school Juniors for the summer of 2020.</li>
+            <br>
+            <li>By doing so, MSGC seeks to expose students to career opportunities in Maine and to provide a direct way by which Maine businesses and research communities can attract young people with high potential for possible future employment.</li>
+            <br>
+            <li><a target="_blank" href="https://www.msgc.org/students/internships/highschool/"><strong>Here</strong></a> is the application for the MERITS Program. Students must be U.S citizens, residents of Maine and must be enrolled at a Maine school to apply to this program. Applications are due January 15, 2020</li>
+          </ul>
+        </details>
+    </div>
+    <br>
+    <div class="descriptions hover">
+      <h3 class="names">Junior Volunteer Program</h3>
+      <details class="dropdown">
+        <summary>Thank you for your interest in the Junior Volunteer program at Maine Medical Center! The program offers high school students an opportunity to gain experience in a healthcare setting while learning new skills and giving back to their community.</summary>
+          <ul>
+            <li>Some areas Junior Volunteers may serve in include: retail shops, information desk, escort, cafeteria, admitting, hospital elder life, and other clinical areas as well as office environments throughout the hospital.</li>
+            <br>
+            <li>Junior Volunteers serving their first year in the program will likely be placed in a food services or retail setting for at least one of their two assignments. Assignment preference is given to Returning Junior Volunteers serving in their 3rd or 4th year. Placement in a specific hospital department cannot be guaranteed.</li>
+            <br>
+            <li><a target="_blank" href="https://mainehealth.org/maine-medical-center/ways-to-give/volunteers/junior-volunteers"><strong>Here</strong></a> is the application for the Junior Volunteer Program. Students must be a high school student, entering freshman through senior year in fall 2020. Applications are due January 24, 2020</li>
+          </ul>
+        </details>
+    </div>
+    <br>
+    <div class="descriptions hover">
+      <h3 class="names">Summer Students Research Program</h3>
+      <details class="dropdown">
+        <summary>For seniors over 18 only! During the summer months Maine Medical Center Research Institute (MMCRI) provides undergraduates with an opportunity to receive an educational experience in biomedical science through the MMCRI Summer Student Research Program.</summary>
+          <ul>
+            <li>Research at MMCRI covers a broad area in biomedical science including vascular biology, stem cell biology, developmental biology, neurobiology, hematology, nephrology, tumor biology, and molecular genetics as well as outcomes research, vector-borne diseases, and clinical research.</li>
+            <br>
+            <li>The Summer Student program is ten weeks in duration, and students work 40 hours per week. The rate of pay for Summer Student Research program participants paid by Maine Medical Center is $13 per hour. Students are responsible for their own transportation and housing.</li>
+            <br>
+            <li><a target="_blank" href="https://mmcri.org/ns/?page_id=505"><strong>Here</strong></a> is the application for the Student Summer Research Program. Students must be at least 18 years of age. Applications are due February 11, 2020</li>
+          </ul>
+        </details>
+    </div>
+<!-- Jobs Section-->
+    <div>
+      <h1 id="first_jobs">Jobs:</h1>
+      <p class="paragraph">Down below is a list of job openings around the Greater Portland area that could help you prepare for the jobs in the future.</p>
+    </div>
+    <div class="descriptions">
+      <h3 class="names">Cross Insurance Company</h3>
+      <ul>
+        <li>Cross Insurance Company is looking to hire students to help with office tasks such as:
+          <ul>
+            <li>Filing</li>
+            <li>Data Entry</li>
+            <li>Phones</li>
+            <li>Copying</li>
+          </ul>
+        </li>
+        <br>
+        <li>Hours: At least 10-20 per week, but up to 40 hours per week</li>
+        <br>
+        <li>Pay: $12-$13/hour</li>
+        <br>
+        <li>For more information and to apply, contact Paula DiMillo at pdimillo@crossagency.com.</li>
+      </ul>
+    </div>
+    <br>
+    <div class="descriptions hover grocery">
+      <h3 class="names">Grocery Stores</h3>
+      <ul>
+        <li><a target="_blank" href="https://www.hannaford.com/about-us/careers">Hannaford</a></li>
+        <br>
+        <li><a target="_blank" href="https://www.albertsonscompanies.com/careers/shaws-careers.html">Shaws</a></li>
+        <br>
+        <li><a target="_blank" href="https://careers.wholefoodsmarket.com/global/en/search-results?keywords=">Whole Foods</a></li>
+        <br>
+        <li><a target="_blank" href="https://www.traderjoes.com/careers">Trader Joe's</a></li>
+      </ul>
+      <!--<img class="working_at_Hannaford" src="https://i.ytimg.com/vi/JLcf4YolCSM/maxresdefault.jpg" alt="Teen working at Hannaford's">-->
+    </div>
+    <br>
+    <div class="descriptions hover">
+      <h3 class="names">Restaurants</h3>
+      <ul>
+        <li><a target="_blank" href="https://www.dunkindonuts.com/en/careers">Dunkin' Donuts</a></li>
+        <br>
+        <li><a target="_blank" href="https://careers.mcdonalds.com/us-restaurants/jobs?keywords=Portland%20Maine">McDonald's</a></li>
+        <br>
+        <li><a target="_blank" href="https://www.snagajob.com/jobs/42295679">Subway</a></li>
+        <br>
+        <li><a target="_blank" href="https://www.indeed.com/q-Wendys-l-Maine-jobs.html">Wendy's</a></li>
+      </ul>
+    </div>
+    <br>
+    <div class="descriptions hover">
+      <h3 class="names">Working with the Eldery</h3>
+      <ul>
+        <li><a target="_blank" href="https://www.thecedarsportland.org/careers/">Cedar's</a></li>
+        <br>
+        <li><a target="_blank" href="https://75statestreet.org/about-us/careers/">75 State Street</a></li>
+        <br>
+        <li><a target="_blank" href="https://seasidehealthcare.hcshiring.com/jobs">Seaside Healthcare</a></li>
+        <br>
+        <li><a target="_blank" href="https://parkdanforth.com/careers/">Park Danforth</a></li>
+      </ul>
+    </div>
+    <br>
+    <div class="descriptions hover">
+      <h3 class="names">Retail Stores</h3>
+      <ul>
+        <li><a target="_blank" href="https://corporate.target.com/Careers?ref=sr_shorturl_careers">Target</a></li>
+        <br>
+        <li><a target="_blank" href="https://careers.kohls.com/search-results?keywords=&p=ChIJM3s4x3KaskwRKy8K9Pp4PU8&location=Westbrook,%20ME,%20USA">Kohls</a></li>
+        <br>
+        <li><a target="_blank" href="https://www.google.com/search?q=jobs+at+the+maine+mall&oq=jobs+at+the+mai&aqs=chrome.0.0j69i57j0l4.3417j0j7&sourceid=chrome&ie=UTF-8&ibp=htl;jobs&sa=X&ved=2ahUKEwi72qf2k4LgAhVPPN8KHc1ZAi4QiYsCKAF6BAgAECU&safe=active&ssui=on#fpstate=tldetail&htidocid=EEdzhAhX4z-grF_GAAAAAA%3D%3D&htivrt=jobs">Eddie Bauer</a></li>
+        <br>
+        <li><a target="_blank" href="https://www.google.com/search?q=jobs+at+the+maine+mall&oq=jobs+at+the+mai&aqs=chrome.0.0j69i57j0l4.3417j0j7&sourceid=chrome&ie=UTF-8&ibp=htl;jobs&sa=X&ved=2ahUKEwi72qf2k4LgAhVPPN8KHc1ZAi4QiYsCKAF6BAgAECU&safe=active&ssui=on#fpstate=tldetail&htidocid=cfoRPLY_wYY0PxGsAAAAAA%3D%3D&htivrt=jobs">Sears</a></li>
+      </ul>
+    </div>
+<!-- volunteering section-->
+<div>
+  <h1 id="first_volunteering" onclick="dropDown()">Volunteering:</h1>
+  <p class="paragraph">Down below is a list of volunteer opportunites around the Portland area.</p>
+</div>
+<div id="more" class="descriptions hover">
+  <h3 class="names">In Portland, Maine:</h3>
+  <ul>
+    <li><a target="_blank" href="http://www.bluntradio.org/contact-us/">WMPG Blunt Youth Radio</a></li>
+    <br>
+    <li><a target="_blank" href="https://www.plannedparenthood.org/get-involved/jobs-and-volunteering">Planned Parenthood</a></li>
+    <br>
+    <li><a target="_blank" href="https://www.preblestreet.org/you-can-help/volunteer/">Preble St Soup Kitchen</a></li>
+    <br>
+    <li><a target="_blank" href="https://www.learningworks.me/join-the-team/program-volunteers/learningworks-afterschool-summer-volunteers/">Learning Works</a></li>
+  </ul>
+</div>
+<!-- tips section-->
+    <div>
+      <h1 id="first_tips">Tips:</h1>
+    </div>
+    <div class="descriptions hover">
+      <h3 class="names">Tips for job a interview</h3>
+      <ul>
+        <li>Research the company and interviewers before going.</li>
+        <br>
+        <li>Practice answers to common interview questions with a friend of family member.</li>
+        <br>
+        <li>Dress to impress, wear business formal clothes.</li>
+        <br>
+        <li>Send a thank you letter afterwards to show your interest.</li>
+      </ul>
+    </div>
+    <br>
+    <div class="descriptions hover">
+      <h3 class="names">Tips for writing job an application</h3>
+      <ul>
+        <li>Sell yourself, write about your positive impacts on your community.</li>
+        <br>
+        <li>Take your time to make sure your application will stand out to the employers.</li>
+        <br>
+        <li>Emphasize previous jobs and other work that closely relates to the job you are applying to.</li>
+        <br>
+        <li>Focus on using power verbs and descriptive words to specifically answer the question at hand.</li>
+      </ul>
+    </div>
+<br>
+<div class="descriptions">
+  <h1 id="form_add">Have an internship or job you want to add to the list above? Fill out this form below!</h1>
+  <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+    <label class="paragraph questions" for="name">What is the name of the company?</label>
+    <input id="name" type="text" name="entry.151408002" placeholder="Company Name" class="box_name" required>
+    <br>
+    <label class="paragraph questions" for="description">What does this job/internship entail?</label>
+    <input id="description" type="text" name="entry.519686267" placeholder="Description" class="box_description" required>
+    <br>
+    <label class="paragraph questions" for="person">Please provide contact name and email contact.</label>
+    <input id="person" type="text" name="entry.258138801" placeholder="Name" class="box_email" required>
+    <label  for="contact"></label>
+    <input id="contact" type="email" name="entry.1693006279" placeholder="Email" class="box_contact" required>
+  <div class="sub paragraph">
+    <button id="send" type="submit">Submit</button>
+  </div>
+  </form>
+
+<!-- Form that connects to a google form-->
+
+</div>
+<!-- footer at the end -->
+<footer>
+  <nav class="help">
+  <div class="categories">
+    <h2><a href="#first_internships">Internships</a></h2>
+  </div>
+  <div class="categories">
+    <h2><a href="#first_jobs">Jobs</a></h2>
+  </div>
+  <div class="categories">
+    <h2><a href="#first_volunteering">Volunteering</a></h2>
+  </div>
+  <div class="categories">
+    <h2><a href="#first_tips">Tips</a></h2>
+  </div>
+</footer>
+<div class="cbhs" >
+  <a target="_blank" href="https://cbhs.portlandschools.org/">cbhs.portlandschools.org</a>
+</nav>
   </body>
 </html>
